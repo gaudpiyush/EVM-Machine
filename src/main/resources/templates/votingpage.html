@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Indian Political Parties</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #ffffff;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+    
+    table {
+        width: 80%;
+        margin: auto;
+        border-collapse: collapse;
+    }
+
+    table, th, td {
+        border: 1px solid #dddddd;
+        padding: 8px;
+    }
+
+    th {
+        background-color: #f2f2f2;
+        color: #333333;
+    }
+
+    td {
+        color: #333333;
+    }
+
+    input[type="submit"] {
+        background-color: #ff9933;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+        background-color: #cc7a00;
+    }
+</style>
+</head>
+<body>
+
+<h2 style="color: #ff9933; text-align: center;">List of Indian Political Parties</h2>
+
+<table>
+    <thead>
+        <tr>
+            <th>Party Name</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Indian National Congress</td>
+        </tr>
+        <!-- Add other parties -->
+    </tbody>
+</table>
+
+<br>
+
+<form action="/votingpage" method="post">
+    <label for="userInput">Enter your text:</label>
+    <input type="text" id="userInput" name="partyname">
+    <br><br>
+    <input type="submit" value="Submit">
+</form>
+
+</body>
+</html>
